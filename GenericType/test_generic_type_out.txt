@@ -1,0 +1,81 @@
+*** Testing contiguous-internally allocated memory: GenericType
+
+*** Testing Homogeneous GenericType
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 9.3e-06
+Function 'MakeZero' (set values to the additive identity element) took 5.2e-06
+Function 'MakeOne' (set values to the multiplicative identity element) took 5.1e-06
+Function 'MakeValue' (set values to the specified value) took 2.4e-06
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 1.9e-06
+Function 'StaticCastValues' took 1.5e-06
+Arithmetic Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 8.1e-06
+Function 'CalculateArguments' took 6.4e-06
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 8.7e-06
+Function 'CalculateModuli' took 8.7e-06
+
+*** Testing Heterogeneous GenericType
+
+Construction
+Copy-construction
+Population
+Sum of the two arrays:
+wibblewobble  (1000,1000)  1000  1000  219  true  
+
+*** Testing contiguous-externally allocated memory: GenericType
+
+*** Testing Homogeneous GenericType
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 8.5e-06
+Function 'MakeZero' (set values to the additive identity element) took 4.8e-06
+Function 'MakeOne' (set values to the multiplicative identity element) took 5.1e-06
+Function 'MakeValue' (set values to the specified value) took 2.2e-06
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 1.6e-06
+Function 'StaticCastValues' took 1.1e-06
+Arithmetic Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 8.1e-06
+Function 'CalculateArguments' took 5.4e-06
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 8.6e-06
+Function 'CalculateModuli' took 6.1e-06
+
+*** Testing Heterogeneous GenericType
+
+Construction
+Copy-construction
+Population
+Sum of the two arrays:
+wibblewobble  (1000,1000)  1000  1000  219  true  
+
+*** Testing distributed-internally allocated memory: GenericType
+
+*** Testing Homogeneous GenericType
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 9.9e-06
+Function 'MakeZero' (set values to the additive identity element) took 5.7e-06
+Function 'MakeOne' (set values to the multiplicative identity element) took 5.7e-06
+Function 'MakeValue' (set values to the specified value) took 2.8e-06
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 1.6e-06
+Function 'StaticCastValues' took 1e-06
+Arithmetic Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 9.5e-06
+Function 'CalculateArguments' took 5.7e-06
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 9.5e-06
+Function 'CalculateModuli' took 6.2e-06
+
+*** Testing Heterogeneous GenericType
+
+Construction
+Copy-construction
+Population
+Sum of the two arrays:
+wibblewobble  (1000,1000)  1000  1000  219  true  
+

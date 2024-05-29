@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0652D9C9-0267-471E-8EA1-5F1900C11EF6}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <ProjectName>NArray</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_DLL;_MT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;freeglutd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>C:\Windows\SysWOW64;C:\Program Files (x86)\NAG\CL24\clw3224dal\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;freeglutd.dll;CLW3224DA_24.0.0_nag.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\NAG\CL24\clw3224dal\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_DLL;_MT;</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\NAG\CL24\clw3224dal\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Windows\SysWOW64;C:\Program Files (x86)\NAG\CL24\clw3224dal\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;freeglut.dll;CLW3224DA_24.0.0_nag.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationExamples\Balloon.h" />
+    <ClInclude Include="AnimationExamples\InflatingBalloon.h" />
+    <ClInclude Include="AnimationExamples\DisappearingRisingFloatingInflatingBalloon.h" />
+    <ClInclude Include="AnimationExamples\FloatingInflatingBalloon.h" />
+    <ClInclude Include="Animation\AnimationDefinition.h" />
+    <ClInclude Include="Animation\AnimationFunctions.h" />
+    <ClInclude Include="Animation\AnimationImplementation.h" />
+    <ClInclude Include="Animation\AnimationOperators.h" />
+    <ClInclude Include="Animation\TestAnimationFunctions.h" />
+    <ClInclude Include="Arithmetic\TestArithmeticFunctions.h" />
+    <ClInclude Include="Combination\CombinationFunctions.h" />
+    <ClInclude Include="Combination\CombinationOperators.h" />
+    <ClInclude Include="Combination\TestCombinationFunctions.h" />
+    <ClInclude Include="Communication\CommunicationFunctions.h" />
+    <ClInclude Include="Communication\CommunicationOperators.h" />
+    <ClInclude Include="Animation\IAnimatable.h" />
+    <ClInclude Include="Communication\ICommunicable.h" />
+    <ClInclude Include="Communication\TestCommunicationFunctions.h" />
+    <ClInclude Include="Comparison\TestComparisonFunctions.h" />
+    <ClInclude Include="Core\NArrayAxiomaticDefinition.h" />
+    <ClInclude Include="Core\NArrayAxiomaticImplementation.h" />
+    <ClInclude Include="Core\NArrayRecursiveDefinition.h" />
+    <ClInclude Include="Core\NArrayRecursiveImplementation.h" />
+    <ClInclude Include="Core\NArraySupport.h" />
+    <ClInclude Include="Core\TestCore.h" />
+    <ClInclude Include="GenericType\TestGenericType.h" />
+    <ClInclude Include="MultiThreading\TestMultiThreading.h" />
+    <ClInclude Include="Serialisation\SerialisationOperators.h" />
+    <ClInclude Include="Serialisation\TestSerialisation.h" />
+    <ClInclude Include="Statistical\TestStatisticalFunctions.h" />
+    <ClInclude Include="Useful\TestUsefulFunctions.h" />
+    <ClInclude Include="Visualisation\IPopulatable.h" />
+    <ClInclude Include="MultiThreading\MultiThreading.h" />
+    <ClInclude Include="Comparison\RelationalComparators.h" />
+    <ClInclude Include="Arithmetic\ArithmeticFunctions.h" />
+    <ClInclude Include="Arithmetic\ArithmeticOperators.h" />
+    <ClInclude Include="Arithmetic\ArithmeticTransforms.h" />
+    <ClInclude Include="Combination\ICombinable.h" />
+    <ClInclude Include="Comparison\ComparisonFunctions.h" />
+    <ClInclude Include="Comparison\LogicalComparators.h" />
+    <ClInclude Include="Comparison\ComparisonOperators.h" />
+    <ClInclude Include="Statistical\StatisticalFunctions.h" />
+    <ClInclude Include="Statistical\StatisticalOperators.h" />
+    <ClInclude Include="Combination\ArithmeticCombiners.h" />
+    <ClInclude Include="Testing\Timer.h" />
+    <ClInclude Include="Testing\UnitTests.h" />
+    <ClInclude Include="Composition\UsefulCompositions.h" />
+    <ClInclude Include="Useful\UsefulFunctions.h" />
+    <ClInclude Include="Comparison\IComparable.h" />
+    <ClInclude Include="Composition\CompositionImplementation.h" />
+    <ClInclude Include="Core\Index.h" />
+    <ClInclude Include="Core\Mask.h" />
+    <ClInclude Include="Useful\UsefulOperators.h" />
+    <ClInclude Include="Core\Shape.h" />
+    <ClInclude Include="Core\Transform.h" />
+    <ClInclude Include="Useful\UsefulTransforms.h" />
+    <ClInclude Include="Composition\CompositionDefinition.h" />
+    <ClInclude Include="Core\NArrayDefinition.h" />
+    <ClInclude Include="GenericType\GenericType.h" />
+    <ClInclude Include="Core\NArrayImplementation.h" />
+    <ClInclude Include="Core\Operator.h" />
+    <ClInclude Include="Visualisation\TestVisualisationFunctions.h" />
+    <ClInclude Include="Visualisation\VisualisationDefinition.h" />
+    <ClInclude Include="Visualisation\VisualisationFunctions.h" />
+    <ClInclude Include="Visualisation\IVisualisable.h" />
+    <ClInclude Include="Visualisation\VisualisationOperators.h" />
+    <ClInclude Include="CommunicationExamples\DMMInterface.h" />
+    <ClInclude Include="AnimationExamples\LorenzAttractor.h" />
+    <ClInclude Include="AnimationExamples\RisingFloatingInflatingBalloon.h" />
+    <ClInclude Include="VisualisationExamples\JuliaSet.h" />
+    <ClInclude Include="VisualisationExamples\MandelbrotSet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationExamples\Balloon.cpp" />
+    <ClCompile Include="AnimationExamples\InflatingBalloon.cpp" />
+    <ClCompile Include="AnimationExamples\DisappearingRisingFloatingInflatingBalloon.cpp" />
+    <ClCompile Include="AnimationExamples\FloatingInflatingBalloon.cpp" />
+    <ClCompile Include="Animation\TestAnimationFunctions.cpp" />
+    <ClCompile Include="Arithmetic\TestArithmeticFunctions.cpp" />
+    <ClCompile Include="Combination\TestCombinationFunctions.cpp" />
+    <ClCompile Include="Communication\TestCommunicationFunctions.cpp" />
+    <ClCompile Include="Comparison\TestComparisonFunctions.cpp" />
+    <ClCompile Include="Core\NArraySupport.cpp" />
+    <ClCompile Include="Core\TestCore.cpp" />
+    <ClCompile Include="GenericType\GenericType.cpp" />
+    <ClCompile Include="Communication\ICommunicable.cpp" />
+    <ClCompile Include="Core\Index.cpp" />
+    <ClCompile Include="Core\Mask.cpp" />
+    <ClCompile Include="Core\Shape.cpp" />
+    <ClCompile Include="GenericType\TestGenericType.cpp" />
+    <ClCompile Include="MultiThreading\TestMultiThreading.cpp" />
+    <ClCompile Include="Serialisation\TestSerialisation.cpp" />
+    <ClCompile Include="Statistical\TestStatisticalFunctions.cpp" />
+    <ClCompile Include="Testing\Timer.cpp" />
+    <ClCompile Include="Testing\UnitTests.cpp" />
+    <ClCompile Include="Useful\TestUsefulFunctions.cpp" />
+    <ClCompile Include="Visualisation\TestVisualisationFunctions.cpp" />
+    <ClCompile Include="Visualisation\VisualisationImplementation.h" />
+    <ClCompile Include="CommunicationExamples\DMMInterface.cpp" />
+    <ClCompile Include="AnimationExamples\LorenzAttractor.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="AnimationExamples\RisingFloatingInflatingBalloon.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

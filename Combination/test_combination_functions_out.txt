@@ -1,0 +1,432 @@
+*** Testing single-threading for contiguous-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.180924
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.15566
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.157441
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.30592
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.185685
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.159088
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.163377
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.167939
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+
+
+*** Testing multi-threading for contiguous-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.261347
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.226434
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.246393
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.258319
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.267011
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.231893
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.231279
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.231688
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+
+
+For contiguous-internally allocated memory: single-threading was 1.32406 times faster than multi-threading
+
+*** Testing single-threading for distributed-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.234104
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.207914
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.209283
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.353461
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.25253
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.210793
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.208008
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.213566
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+
+
+*** Testing multi-threading for distributed-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.304418
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.275655
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.276226
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.293068
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.316959
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.283881
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.269902
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.26879
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+-nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) -nan(ind) 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+(-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
+
+
+For distributed-internally allocated memory: single-threading was 1.21127 times faster than multi-threading
+

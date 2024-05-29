@@ -1,0 +1,18 @@
+*** Reference Times - for comparing NArray-style array times with C-style array times and C++-style array times
+
+Building and destroying the C-style array took 0.0053709
+
+Building and destroying the C++-style array took 0.0059801
+
+Building and destroying the contiguous-internally allocated NArray-style array with indexing off took 0.140921
+
+Building and destroying the contiguous-externally allocated NArray-style array with indexing off took 0.11648
+
+Building and destroying the distributed-internally allocated NArray-style array with indexing off took 0.211396
+
+Building and destroying the contiguous-internally allocated NArray-style array with indexing on took 0.21556
+
+Building and destroying the contiguous-externally allocated NArray-style array with indexing on took 0.207073
+
+Building and destroying the distributed-internally allocated NArray-style array with indexing on took 0.296386
+

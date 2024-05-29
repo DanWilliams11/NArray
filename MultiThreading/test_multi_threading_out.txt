@@ -1,0 +1,32 @@
+*** Testing single-threading for contiguous-internally allocated memory: Convolution of a 3D image with a 3D kernel
+
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0001657
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0001664
+Function 'CalculateConvolution' took 0.243084
+Function 'MapValues' took 4.54e-05
+
+*** Testing multi-threading for contiguous-internally allocated memory: Convolution of a 3D image with a 3D kernel
+
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0003334
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0003364
+Function 'CalculateConvolution' took 0.13928
+Function 'MapValues' took 5.63e-05
+
+For contiguous-internally allocated memory: multi-threading was 1.73893 times faster than single-threading
+
+*** Testing single-threading for distributed-internally allocated memory: Convolution of a 3D image with a 3D kernel
+
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0003926
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0003872
+Function 'CalculateConvolution' took 0.266528
+Function 'MapValues' took 5.84e-05
+
+*** Testing multi-threading for distributed-internally allocated memory: Convolution of a 3D image with a 3D kernel
+
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0004296
+Function 'MakeOne' (set values to the multiplicative identity element) took 0.0004311
+Function 'CalculateConvolution' took 0.122489
+Function 'MapValues' took 5.89e-05
+
+For distributed-internally allocated memory: multi-threading was 2.16651 times faster than single-threading
+

@@ -1,0 +1,68 @@
+*** Testing contiguous-internally allocated memory: Serialisation of non-uniform n-dimensional array
+
+Constructing the output array with re-indexing off took 0.292826
+Number of elements in output array is 2400645
+Serialisation out with re-indexing off took 1.38087
+Number of elements in input array is 2400645
+Serialisation in with re-indexing off took 1.54158
+
+The array is now smaller because reindexing is on and indexes take up a lot of room - modify this according to available memory
+
+This will take a long time because even though the array is smaller, it is non-uniform and the indexes need to be recalculated on-the-fly
+
+Constructing the output array with re-indexing on took 0.0614606
+Number of elements in output array is 240645
+Serialisation out with re-indexing on took 0.145149
+Number of elements in input array is 240645
+Serialisation in with re-indexing on took 9.1609
+
+*** Testing contiguous-internally allocated memory: Serialisation of uniform n-dimensional array
+
+Constructing the output array with re-indexing off took 0.212002
+Number of elements in output array is 3000000
+Serialisation out with re-indexing off took 3.0477
+Number of elements in input array is 3000000
+Serialisation in with re-indexing off took 1.73815
+
+The array is now smaller because reindexing is on and indexes take up a lot of room - modify this according to available memory
+
+Constructing the output array with re-indexing on took 0.0384785
+Number of elements in output array is 300000
+Serialisation out with re-indexing on took 0.309217
+Number of elements in input array is 300000
+Serialisation in with re-indexing on took 0.187217
+
+*** Testing distributed-internally allocated memory: Serialisation of non-uniform n-dimensional array
+
+Constructing the output array with re-indexing off took 0.40975
+Number of elements in output array is 2400645
+Serialisation out with re-indexing off took 1.41108
+Number of elements in input array is 2400645
+Serialisation in with re-indexing off took 1.53257
+
+The array is now smaller because reindexing is on and indexes take up a lot of room - modify this according to available memory
+
+This will take a long time because even though the array is smaller, it is non-uniform and the indexes need to be recalculated on-the-fly
+
+Constructing the output array with re-indexing on took 0.0764324
+Number of elements in output array is 240645
+Serialisation out with re-indexing on took 0.14336
+Number of elements in input array is 240645
+Serialisation in with re-indexing on took 9.15342
+
+*** Testing distributed-internally allocated memory: Serialisation of uniform n-dimensional array
+
+Constructing the output array with re-indexing off took 0.351085
+Number of elements in output array is 3000000
+Serialisation out with re-indexing off took 3.08392
+Number of elements in input array is 3000000
+Serialisation in with re-indexing off took 1.91488
+
+The array is now smaller because reindexing is on and indexes take up a lot of room - modify this according to available memory
+
+Constructing the output array with re-indexing on took 0.0506016
+Number of elements in output array is 300000
+Serialisation out with re-indexing on took 0.311036
+Number of elements in input array is 300000
+Serialisation in with re-indexing on took 0.203269
+

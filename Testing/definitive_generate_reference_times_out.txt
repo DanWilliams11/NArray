@@ -1,0 +1,18 @@
+*** Reference Times - for comparing KArrayNDim-style array times with C-style array times and C++-style array times
+
+Building and destroying the C-style array took 0.00362758
+
+Building and destroying the C++-style array took 0.00419881
+
+Building and destroying the contiguous-internally allocated KArrayNDim-style array with indexing off took 0.36943
+
+Building and destroying the contiguous-externally allocated KArrayNDim-style array with indexing off took 0.366713
+
+Building and destroying the distributed-internally allocated KArrayNDim-style array with indexing off took 0.710948
+
+Building and destroying the contiguous-internally allocated KArrayNDim-style array with indexing on took 0.71872
+
+Building and destroying the contiguous-externally allocated KArrayNDim-style array with indexing on took 0.722371
+
+Building and destroying the distributed-internally allocated KArrayNDim-style array with indexing on took 1.06923
+

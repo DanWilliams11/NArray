@@ -1,0 +1,432 @@
+*** Testing single-threading for contiguous-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.497988
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.478201
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.477498
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.618883
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.509365
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.489308
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.495164
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.517726
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+
+
+*** Testing multi-threading for contiguous-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.528059
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.499332
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.499414
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.529953
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.537212
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.51601
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.517782
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.519469
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+
+
+For contiguous-internally allocated memory: single-threading was 1.01545 times faster than multi-threading
+
+*** Testing single-threading for distributed-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.712676
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.700548
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.69175
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.826043
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.733708
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.701123
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.706176
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.716371
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+
+
+*** Testing multi-threading for distributed-internally allocated memory: Combination Functions
+
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.731749
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.706149
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.696709
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.722097
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.755717
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.726015
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.713062
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.712595
+matrix1 + matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 - matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 * matrix2 = 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+matrix1 / matrix2 = 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+-1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND -1.#IND 
+
+matrix3 + matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 - matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 * matrix4 = 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) (0,0) 
+
+matrix3 / matrix4 = 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+(1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) (1.#QNAN,1.#QNAN) 
+
+
+For distributed-internally allocated memory: multi-threading was 1.00422 times faster than single-threading
+

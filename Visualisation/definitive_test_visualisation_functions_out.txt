@@ -1,0 +1,20 @@
+*** Testing contiguous-internally allocated memory: Visualisation Functions
+
+The Julia Set - a mapping from the Complex Plane to the Cartesian Plane using a Transform
+
+The Mandelbrot Set - a mapping from the Complex Plane to the Cartesian Plane using a Transform
+
+The Julia Set - a mapping from the Complex Plane to the Cartesian Plane using IVisualisable
+
+The Mandelbrot Set - a mapping from the Complex Plane to the Cartesian Plane using IVisualisable
+
+*** Testing distributed-internally allocated memory: Visualisation Functions
+
+The Julia Set - a mapping from the Complex Plane to the Cartesian Plane using a Transform
+
+The Mandelbrot Set - a mapping from the Complex Plane to the Cartesian Plane using a Transform
+
+The Julia Set - a mapping from the Complex Plane to the Cartesian Plane using IVisualisable
+
+The Mandelbrot Set - a mapping from the Complex Plane to the Cartesian Plane using IVisualisable
+

@@ -1,0 +1,68 @@
+*** Testing single-threading for contiguous-internally allocated memory: Arithmetic Functions
+
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.024367
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0241996
+Function 'CalculatePi' took 0.0128364
+Result: 1.#INF
+Function 'CalculateSigma' took 0.012938
+Result: 1e+012
+Function 'OffsetValues' (offset by the multiplicative identity element) took 0.0236767
+Function 'OffsetValues' (offset by the specified offst) took 0.0235221
+Function 'ScaleValues' (scale by the specified scl) took 0.0234728
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.0252724
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.024758
+Function 'CalculateArguments' took 0.0506869
+Function 'CalculateModuli' took 0.0377855
+
+*** Testing multi-threading for contiguous-internally allocated memory: Arithmetic Functions
+
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.0242769
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0239984
+Function 'CalculatePi' took 0.0128014
+Result: 1.#INF
+Function 'CalculateSigma' took 0.0129358
+Result: 1e+012
+Function 'OffsetValues' (offset by the multiplicative identity element) took 0.057901
+Function 'OffsetValues' (offset by the specified offst) took 0.0624382
+Function 'ScaleValues' (scale by the specified scl) took 0.0468275
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.0247615
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.024646
+Function 'CalculateArguments' took 0.0699914
+Function 'CalculateModuli' took 0.0624318
+
+For contiguous-internally allocated memory: single-threading was 1.49202 times faster than multi-threading
+
+*** Testing single-threading for distributed-internally allocated memory: Arithmetic Functions
+
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.0267745
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0265759
+Function 'CalculatePi' took 0.0172004
+Result: 1.#INF
+Function 'CalculateSigma' took 0.0168796
+Result: 1e+012
+Function 'OffsetValues' (offset by the multiplicative identity element) took 0.0255438
+Function 'OffsetValues' (offset by the specified offst) took 0.0256002
+Function 'ScaleValues' (scale by the specified scl) took 0.0256124
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.0269262
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0267312
+Function 'CalculateArguments' took 0.0570864
+Function 'CalculateModuli' took 0.0443401
+
+*** Testing multi-threading for distributed-internally allocated memory: Arithmetic Functions
+
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.0265759
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.026565
+Function 'CalculatePi' took 0.017056
+Result: 1.#INF
+Function 'CalculateSigma' took 0.0168312
+Result: 1e+012
+Function 'OffsetValues' (offset by the multiplicative identity element) took 0.0529376
+Function 'OffsetValues' (offset by the specified offst) took 0.0468121
+Function 'ScaleValues' (scale by the specified scl) took 0.0468265
+Function 'MakeRamped' (start at the additive identity element and increment by the multiplicative identity element) took 0.0267822
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0266542
+Function 'CalculateArguments' took 0.0749574
+Function 'CalculateModuli' took 0.0623699
+
+For distributed-internally allocated memory: single-threading was 1.32918 times faster than multi-threading
+

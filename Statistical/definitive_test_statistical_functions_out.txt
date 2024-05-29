@@ -1,0 +1,116 @@
+*** Testing single-threading for contiguous-internally allocated memory: Statistical Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0245206
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0240777
+Function 'CalculateExtrema' took 0.0192582
+Min Value: -3
+Min Index: [0, 0]
+Max Value: 2.99999
+Max Index: [999, 1000]
+Function 'CalculateExtrema' took 0.0192826
+Min Value: 0
+Min Index: [0, 0]
+Max Value: 0.999999
+Max Index: [999, 1000]
+Function 'CalculateMean' took 0.0129698
+Result: -2.99697e-006
+Function 'CalculateMean' took 0.0129002
+Result: 0.5
+Function 'CalculateStandardNormalPDF' took 0.0489922
+Function 'CalculateStandardNormalCDF' took 0.947485
+Function 'CalculateStandardNormalInverseCDF' took 0.0464737
+Function 'CalculateGeneralNormalPDF' took 0.0524513
+Function 'CalculateGeneralNormalCDF' took 0.934668
+Function 'CalculateGeneralNormalInverseCDF' took 0.0483167
+Function 'CalculateLogNormalPDF' took 0.0726981
+Function 'CalculateLogNormalCDF' took 0.495389
+Function 'CalculateLogNormalInverseCDF' took 0.0706736
+
+*** Testing multi-threading for contiguous-internally allocated memory: Statistical Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0242432
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0243439
+Function 'CalculateExtrema' took 0.0191354
+Min Value: -3
+Min Index: [0, 0]
+Max Value: 2.99999
+Max Index: [999, 1000]
+Function 'CalculateExtrema' took 0.0189208
+Min Value: 0
+Min Index: [0, 0]
+Max Value: 0.999999
+Max Index: [999, 1000]
+Function 'CalculateMean' took 0.0126808
+Result: -2.99697e-006
+Function 'CalculateMean' took 0.0128639
+Result: 0.5
+Function 'CalculateStandardNormalPDF' took 0.0657136
+Function 'CalculateStandardNormalCDF' took 0.296815
+Function 'CalculateStandardNormalInverseCDF' took 0.0624482
+Function 'CalculateGeneralNormalPDF' took 0.0624501
+Function 'CalculateGeneralNormalCDF' took 0.312462
+Function 'CalculateGeneralNormalInverseCDF' took 0.0624376
+Function 'CalculateLogNormalPDF' took 0.0624552
+Function 'CalculateLogNormalCDF' took 0.187434
+Function 'CalculateLogNormalInverseCDF' took 0.0624479
+
+For contiguous-internally allocated memory: multi-threading was 2.19929 times faster than single-threading
+
+*** Testing single-threading for distributed-internally allocated memory: Statistical Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0266728
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0267312
+Function 'CalculateExtrema' took 0.0200431
+Min Value: -3
+Min Index: [0, 0]
+Max Value: 2.99999
+Max Index: [999, 1000]
+Function 'CalculateExtrema' took 0.0202265
+Min Value: 0
+Min Index: [0, 0]
+Max Value: 0.999999
+Max Index: [999, 1000]
+Function 'CalculateMean' took 0.0173264
+Result: -2.99697e-006
+Function 'CalculateMean' took 0.0172045
+Result: 0.5
+Function 'CalculateStandardNormalPDF' took 0.0532638
+Function 'CalculateStandardNormalCDF' took 0.948153
+Function 'CalculateStandardNormalInverseCDF' took 0.0503418
+Function 'CalculateGeneralNormalPDF' took 0.0563445
+Function 'CalculateGeneralNormalCDF' took 0.935388
+Function 'CalculateGeneralNormalInverseCDF' took 0.0523099
+Function 'CalculateLogNormalPDF' took 0.0764283
+Function 'CalculateLogNormalCDF' took 0.499198
+Function 'CalculateLogNormalInverseCDF' took 0.0746924
+
+*** Testing multi-threading for distributed-internally allocated memory: Statistical Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0267773
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0267976
+Function 'CalculateExtrema' took 0.0199674
+Min Value: -3
+Min Index: [0, 0]
+Max Value: 2.99999
+Max Index: [999, 1000]
+Function 'CalculateExtrema' took 0.0198433
+Min Value: 0
+Min Index: [0, 0]
+Max Value: 0.999999
+Max Index: [999, 1000]
+Function 'CalculateMean' took 0.0169919
+Result: -2.99697e-006
+Function 'CalculateMean' took 0.0170567
+Result: 0.5
+Function 'CalculateStandardNormalPDF' took 0.0806871
+Function 'CalculateStandardNormalCDF' took 0.296825
+Function 'CalculateStandardNormalInverseCDF' took 0.0624536
+Function 'CalculateGeneralNormalPDF' took 0.0624382
+Function 'CalculateGeneralNormalCDF' took 0.296825
+Function 'CalculateGeneralNormalInverseCDF' took 0.0624389
+Function 'CalculateLogNormalPDF' took 0.0780788
+Function 'CalculateLogNormalCDF' took 0.187443
+Function 'CalculateLogNormalInverseCDF' took 0.0780718
+
+For distributed-internally allocated memory: multi-threading was 2.15677 times faster than single-threading
+

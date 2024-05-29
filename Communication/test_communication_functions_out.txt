@@ -1,0 +1,4 @@
+*** Testing contiguous-internally allocated memory: Communication Functions
+
+*** Testing distributed-internally allocated memory: Communication Functions
+

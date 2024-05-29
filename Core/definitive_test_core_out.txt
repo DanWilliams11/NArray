@@ -1,0 +1,156 @@
+*** Testing contiguous-internally allocated memory: Core
+
+*** Testing Scalars
+
+Construction
+Copy-construction
+Population
+Useful Functions
+Function 'MakeZero' (set values to the additive identity element) took 6.54311e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 4.13755e-005
+Function 'MakeValue' (set values to the specified value) took 3.07911e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 7.37703e-006
+Function 'StaticCastValues' took 2.85459e-005
+
+*** Testing Vectors
+
+Construction
+Copy-construction
+Population
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 3.52815e-006
+Function 'MakeZero' (set values to the additive identity element) took 3.94511e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 3.91303e-005
+Function 'MakeValue' (set values to the specified value) took 2.75837e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 6.09407e-006
+Function 'StaticCastValues' took 2.43763e-005
+
+*** Testing Matrices
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 4.81111e-006
+Function 'MakeZero' (set values to the additive identity element) took 4.45829e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 3.65644e-005
+Function 'MakeValue' (set values to the specified value) took 2.598e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 6.73555e-006
+Function 'StaticCastValues' took 2.37348e-005
+
+*** Testing Array3D
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 5.45259e-006
+Function 'MakeZero' (set values to the additive identity element) took 4.49037e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 4.00926e-005
+Function 'MakeValue' (set values to the specified value) took 2.88666e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 5.77333e-006
+Function 'StaticCastValues' took 2.85459e-005
+Resizing
+
+*** Testing contiguous-externally allocated memory: Core
+
+*** Testing Scalars
+
+Construction
+Copy-construction
+Population
+Useful Functions
+Function 'MakeZero' (set values to the additive identity element) took 4.71489e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 4.90733e-005
+Function 'MakeValue' (set values to the specified value) took 2.21311e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 4.49037e-006
+Function 'StaticCastValues' took 2.43763e-005
+
+*** Testing Vectors
+
+Construction
+Copy-construction
+Population
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 1.6037e-006
+Function 'MakeZero' (set values to the additive identity element) took 3.52815e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 3.23948e-005
+Function 'MakeValue' (set values to the specified value) took 2.30933e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 3.52815e-006
+Function 'StaticCastValues' took 2.24518e-005
+
+*** Testing Matrices
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 1.6037e-006
+Function 'MakeZero' (set values to the additive identity element) took 3.84889e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 3.07911e-005
+Function 'MakeValue' (set values to the specified value) took 2.53385e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 7.05629e-006
+Function 'StaticCastValues' took 2.91874e-005
+
+*** Testing Array3D
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 2.56592e-006
+Function 'MakeZero' (set values to the additive identity element) took 4.0734e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 4.23377e-005
+Function 'MakeValue' (set values to the specified value) took 2.69422e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 2.88666e-006
+Function 'StaticCastValues' took 2.43763e-005
+Resizing
+
+*** Testing distributed-internally allocated memory: Core
+
+*** Testing Scalars
+
+Construction
+Copy-construction
+Population
+Useful Functions
+Function 'MakeZero' (set values to the additive identity element) took 3.20741e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 3.20741e-005
+Function 'MakeValue' (set values to the specified value) took 2.27726e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 2.88666e-006
+Function 'StaticCastValues' took 2.34141e-005
+
+*** Testing Vectors
+
+Construction
+Copy-construction
+Population
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 1.6037e-006
+Function 'MakeZero' (set values to the additive identity element) took 3.97718e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 2.79044e-005
+Function 'MakeValue' (set values to the specified value) took 2.40555e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 4.49037e-006
+Function 'StaticCastValues' took 2.34141e-005
+
+*** Testing Matrices
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 4.81111e-006
+Function 'MakeZero' (set values to the additive identity element) took 3.81681e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 2.95081e-005
+Function 'MakeValue' (set values to the specified value) took 2.43763e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 5.77333e-006
+Function 'StaticCastValues' took 2.37348e-005
+
+*** Testing Array3D
+
+Construction
+Copy-construction
+Useful Functions
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 2.24518e-006
+Function 'MakeZero' (set values to the additive identity element) took 5.74126e-005
+Function 'MakeOne' (set values to the multiplicative identity element) took 4.2017e-005
+Function 'MakeValue' (set values to the specified value) took 2.66215e-005
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 3.52815e-006
+Function 'StaticCastValues' took 2.43763e-005
+Resizing
+

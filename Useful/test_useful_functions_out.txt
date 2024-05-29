@@ -1,0 +1,92 @@
+*** Testing single-threading for contiguous-internally allocated memory: Useful Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0083868
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0410457
+Function 'MakeTranspose' (make the array the transpose of itself (array must be square for this otherwise an exception is thrown)) took 0.126882
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0410601
+Function 'MakeIdentity' (make the array the identity array (array must be square for this otherwise an exception is thrown)) took 0.176647
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0419794
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.120498
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0411305
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.118201
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.041599
+Function 'MakeTriangleZero' with the speciifed region_specifier (make the array's upper_triangle, lower-triangle or diagonal the additive identity element (array must be square for this otherwise an exception is thrown)) took 0.0935766
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0410258
+Function 'MakeTriangleOne' with the specified region_specifier (make the array's upper-triangle, lower-triangle or diagonal the multiplicative identity element (array must be square for this otherwise an exception is thrown)) took 0.0943003
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0413589
+Function 'MakeTriangleValue' with the specified region_specifier and value (make the array's upper_triangle, lower_triangle or diagonal equal to the specified value (array must be square for this otherwise an exception is thrown)) took 0.0201772
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0411984
+Function 'Transpose' (transpose the array to create a new array (array need not be square for this)) took 0.286493
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 2.8e-06
+Function 'DiffPairwiseColumns' (calculate the absolute differences in row values between all pairwise combinations of columns in the array to create a new array) took 3.21e-05
+
+*** Testing multi-threading for contiguous-internally allocated memory: Useful Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0084112
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0411261
+Function 'MakeTranspose' (make the array the transpose of itself (array must be square for this otherwise an exception is thrown)) took 0.129174
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0429875
+Function 'MakeIdentity' (make the array the identity array (array must be square for this otherwise an exception is thrown)) took 0.128539
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0431568
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.113209
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0432009
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.112857
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.043166
+Function 'MakeTriangleZero' with the speciifed region_specifier (make the array's upper_triangle, lower-triangle or diagonal the additive identity element (array must be square for this otherwise an exception is thrown)) took 0.112994
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.042911
+Function 'MakeTriangleOne' with the specified region_specifier (make the array's upper-triangle, lower-triangle or diagonal the multiplicative identity element (array must be square for this otherwise an exception is thrown)) took 0.113172
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0433121
+Function 'MakeTriangleValue' with the specified region_specifier and value (make the array's upper_triangle, lower_triangle or diagonal equal to the specified value (array must be square for this otherwise an exception is thrown)) took 0.0200522
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0410582
+Function 'Transpose' (transpose the array to create a new array (array need not be square for this)) took 0.207443
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 3e-06
+Function 'DiffPairwiseColumns' (calculate the absolute differences in row values between all pairwise combinations of columns in the array to create a new array) took 3.61e-05
+
+For contiguous-internally allocated memory: multi-threading was 1.069 times faster than single-threading
+
+*** Testing single-threading for distributed-internally allocated memory: Useful Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0098591
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0414325
+Function 'MakeTranspose' (make the array the transpose of itself (array must be square for this otherwise an exception is thrown)) took 0.147297
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0414081
+Function 'MakeIdentity' (make the array the identity array (array must be square for this otherwise an exception is thrown)) took 0.175835
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0414178
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.12722
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0413666
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.127352
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0415054
+Function 'MakeTriangleZero' with the speciifed region_specifier (make the array's upper_triangle, lower-triangle or diagonal the additive identity element (array must be square for this otherwise an exception is thrown)) took 0.0933331
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0414324
+Function 'MakeTriangleOne' with the specified region_specifier (make the array's upper-triangle, lower-triangle or diagonal the multiplicative identity element (array must be square for this otherwise an exception is thrown)) took 0.0940069
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0415619
+Function 'MakeTriangleValue' with the specified region_specifier and value (make the array's upper_triangle, lower_triangle or diagonal equal to the specified value (array must be square for this otherwise an exception is thrown)) took 0.0206032
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0416712
+Function 'Transpose' (transpose the array to create a new array (array need not be square for this)) took 0.334787
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 2.9e-06
+Function 'DiffPairwiseColumns' (calculate the absolute differences in row values between all pairwise combinations of columns in the array to create a new array) took 3.19e-05
+
+*** Testing multi-threading for distributed-internally allocated memory: Useful Functions
+
+Function 'MakeRamped' (start at the specified start_val and increment by the specified step_val) took 0.0097511
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0416654
+Function 'MakeTranspose' (make the array the transpose of itself (array must be square for this otherwise an exception is thrown)) took 0.136631
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0432834
+Function 'MakeIdentity' (make the array the identity array (array must be square for this otherwise an exception is thrown)) took 0.128244
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0432448
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.128801
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0434067
+Function 'MakeSymmetric' with the specified region_specifier (make the array symmetric using its lower-triangle or upper-triangle (array must be square for this otherwise an exception is thrown)) took 0.112583
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.043198
+Function 'MakeTriangleZero' with the speciifed region_specifier (make the array's upper_triangle, lower-triangle or diagonal the additive identity element (array must be square for this otherwise an exception is thrown)) took 0.112968
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.043209
+Function 'MakeTriangleOne' with the specified region_specifier (make the array's upper-triangle, lower-triangle or diagonal the multiplicative identity element (array must be square for this otherwise an exception is thrown)) took 0.112925
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0434231
+Function 'MakeTriangleValue' with the specified region_specifier and value (make the array's upper_triangle, lower_triangle or diagonal equal to the specified value (array must be square for this otherwise an exception is thrown)) took 0.02123
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 0.0417706
+Function 'Transpose' (transpose the array to create a new array (array need not be square for this)) took 0.252384
+Function 'MakeRandom' (randomise the values between the specified min and the specified max) took 3.2e-06
+Function 'DiffPairwiseColumns' (calculate the absolute differences in row values between all pairwise combinations of columns in the array to create a new array) took 3.29e-05
+
+For distributed-internally allocated memory: multi-threading was 1.07608 times faster than single-threading
+
