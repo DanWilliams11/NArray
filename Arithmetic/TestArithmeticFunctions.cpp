@@ -9,6 +9,8 @@
 
 double NArray::TestArithmeticFunctions(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity, bool multi_threaded)
 {
+	std::cout << "*** Testing " << NArraySupport::MultiThreadingStr(multi_threaded) << " for " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
+	std::cout << "Arithmetic Functions" << std::endl << std::endl;
 	output_file << "*** Testing " << NArraySupport::MultiThreadingStr(multi_threaded) << " for " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "Arithmetic Functions" << std::endl << std::endl;
 
@@ -22,7 +24,9 @@ double NArray::TestArithmeticFunctions(NArraySupport::StorageOption storage_opti
 	int num_rows = NArraySupport::c_max_num_threads;
 	int num_cols = 1000000;
 	Shape shape(c_matrix_order, num_rows, num_cols);
+	std::string shape_string = std::to_string(num_rows) + " X " + std::to_string(num_cols);
 
+	std::cout << "Arithmetic Functions on " << shape_string << " Matrix of double (MakeRamped, CalculatePi, CalculateSigma, OffsetValues, ScaleValues)" << std::endl;
 	typedef double stored_type1;
 	typedef NArrayType<stored_type1>::Matrix storage_type1;
 	storage_type1 matrix1(storage_option, shape, stored_type1(0.0), false);
@@ -34,6 +38,7 @@ double NArray::TestArithmeticFunctions(NArraySupport::StorageOption storage_opti
 	OffsetValues<storage_type1, stored_type1>(matrix1, 2.0, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	ScaleValues<storage_type1, stored_type1>(matrix1, 2.0, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Arithmetic Functions on " << shape_string << " Matrix of complex<double> (MakeRamped, CalculateArguments, CalculateModuli)" << std::endl;
 	typedef std::complex<stored_type1> stored_type2;
 	typedef NArrayType<stored_type2>::Matrix storage_type2;
 	storage_type2 matrix2(storage_option, shape, stored_type2(0.0, 0.0), true);
@@ -42,6 +47,7 @@ double NArray::TestArithmeticFunctions(NArraySupport::StorageOption storage_opti
 	CalculateArguments<storage_type2, stored_type2, storage_type1, stored_type1>(matrix2, matrix1, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	CalculateModuli<storage_type2, stored_type2, storage_type1, stored_type1>(matrix2, matrix1, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	return timer.GetTotalTime();

@@ -8,6 +8,8 @@
 
 double NArray::TestStatisticalFunctions(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity, bool multi_threaded)
 {
+	std::cout << "*** Testing " << NArraySupport::MultiThreadingStr(multi_threaded) << " for " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
+	std::cout << "Statistical Functions" << std::endl << std::endl;
 	output_file << "*** Testing " << NArraySupport::MultiThreadingStr(multi_threaded) << " for " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "Statistical Functions" << std::endl << std::endl;
 
@@ -38,6 +40,7 @@ double NArray::TestStatisticalFunctions(NArraySupport::StorageOption storage_opt
 	storage_type input_matrix2(storage_option, shape, stored_type(0.0), true);
 	MakeRamped<storage_type, stored_type>(input_matrix2, start_val, step_val, &timer, &output_file, verbosity);
 
+	std::cout << "Test CalculateExtrema and CalculateMean" << std::endl;
 	stored_type min_value = 0.0;
 	stored_type max_value = 0.0;
 	Index min_index;
@@ -47,24 +50,28 @@ double NArray::TestStatisticalFunctions(NArraySupport::StorageOption storage_opt
 	CalculateMean<storage_type, stored_type>(input_matrix1, &timer, &output_file);
 	CalculateMean<storage_type, stored_type>(input_matrix2, &timer, &output_file);
 
+	std::cout << "Test CalculateStandardNormalPDF, CalculateStandardNormalCDF and CalculateStandardNormalInverseCDF" << std::endl;
 	stored_type mu = 0.0;
 	stored_type sigma = 1.0;
 	CalculateStandardNormalPDF<storage_type, stored_type>(input_matrix1, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	CalculateStandardNormalCDF<storage_type, stored_type>(input_matrix1, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	CalculateStandardNormalInverseCDF<storage_type, stored_type>(input_matrix2, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Test CalculateGeneralNormalPDF, CalculateGeneralNormalCDF and CalculateGeneralNormalInverseCDF" << std::endl;
 	mu = 2.0;
 	sigma = 0.25;
 	CalculateGeneralNormalPDF(input_matrix1, mu, sigma, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	CalculateGeneralNormalCDF(input_matrix1, mu, sigma, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	CalculateGeneralNormalInverseCDF(input_matrix2, mu, sigma, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Test CalculateLogNormalPDF, CalculateLogNormalCDF and CalculateLogNormalInverseCDF" << std::endl;
 	mu = 0.0;
 	sigma = 0.25;
 	CalculateLogNormalPDF(input_matrix1, mu, sigma, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	CalculateLogNormalCDF(input_matrix1, mu, sigma, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 	CalculateLogNormalInverseCDF(input_matrix2, mu, sigma, output_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	return timer.GetTotalTime();

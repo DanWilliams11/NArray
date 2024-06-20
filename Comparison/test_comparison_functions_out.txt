@@ -1,36 +1,36 @@
 *** Testing contiguous-internally allocated memory: Comparison Functions
 
-Function 'CompareValues' (correspondingly across two arrays) using the 'Equal' comparator took 0.100876
+Function 'CompareValues' (correspondingly across two arrays) using the 'Equal' comparator took 0.103043
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'NotEqual' comparator took 0.100283
+Function 'CompareValues' (correspondingly across two arrays) using the 'NotEqual' comparator took 0.103159
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'LessThan' comparator took 0.102391
+Function 'CompareValues' (correspondingly across two arrays) using the 'LessThan' comparator took 0.103489
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'LessThanOrEqual' comparator took 0.104787
+Function 'CompareValues' (correspondingly across two arrays) using the 'LessThanOrEqual' comparator took 0.103211
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThan' comparator took 0.104955
+Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThan' comparator took 0.101839
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThanOrEqual' comparator took 0.104043
+Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThanOrEqual' comparator took 0.10291
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'And' comparator took 0.0976392
+Function 'CompareValues' (correspondingly across two arrays) using the 'And' comparator took 0.10111
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'Nand' comparator took 0.0983055
+Function 'CompareValues' (correspondingly across two arrays) using the 'Nand' comparator took 0.0999395
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'Or' comparator took 0.101474
+Function 'CompareValues' (correspondingly across two arrays) using the 'Or' comparator took 0.102178
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'Nor' comparator took 0.101002
+Function 'CompareValues' (correspondingly across two arrays) using the 'Nor' comparator took 0.101926
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'Xor' comparator took 0.100355
+Function 'CompareValues' (correspondingly across two arrays) using the 'Xor' comparator took 0.103621
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'And' comparator took 0.0817069
+Function 'CompareValues' (sequentially within one array) using the 'And' comparator took 0.0881857
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'Nand' comparator took 0.0822269
+Function 'CompareValues' (sequentially within one array) using the 'Nand' comparator took 0.086078
 Result: 1
-Function 'CompareValues' (sequentially within one array) using the 'Or' comparator took 0.0830589
+Function 'CompareValues' (sequentially within one array) using the 'Or' comparator took 0.0884445
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'Nor' comparator took 0.0820415
+Function 'CompareValues' (sequentially within one array) using the 'Nor' comparator took 0.0868414
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'Xor' comparator took 0.0819384
+Function 'CompareValues' (sequentially within one array) using the 'Xor' comparator took 0.0871826
 Result: 0
 matrix1 == matrix2 = 1
 matrix1 != matrix2 = 0
@@ -43,37 +43,37 @@ matrix3 || matrix4 = 0
 
 *** Testing distributed-internally allocated memory: Comparison Functions
 
-Function 'CompareValues' (correspondingly across two arrays) using the 'Equal' comparator took 0.102615
+Function 'CompareValues' (correspondingly across two arrays) using the 'Equal' comparator took 0.105965
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'NotEqual' comparator took 0.102287
+Function 'CompareValues' (correspondingly across two arrays) using the 'NotEqual' comparator took 0.106315
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'LessThan' comparator took 0.104277
+Function 'CompareValues' (correspondingly across two arrays) using the 'LessThan' comparator took 0.106138
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'LessThanOrEqual' comparator took 0.101883
+Function 'CompareValues' (correspondingly across two arrays) using the 'LessThanOrEqual' comparator took 0.106892
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThan' comparator took 0.101961
+Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThan' comparator took 0.10447
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThanOrEqual' comparator took 0.103989
+Function 'CompareValues' (correspondingly across two arrays) using the 'GreaterThanOrEqual' comparator took 0.10674
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'And' comparator took 0.0984868
+Function 'CompareValues' (correspondingly across two arrays) using the 'And' comparator took 0.0996452
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'Nand' comparator took 0.0987144
+Function 'CompareValues' (correspondingly across two arrays) using the 'Nand' comparator took 0.101131
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'Or' comparator took 0.103339
+Function 'CompareValues' (correspondingly across two arrays) using the 'Or' comparator took 0.103892
 Result: 0
-Function 'CompareValues' (correspondingly across two arrays) using the 'Nor' comparator took 0.103759
+Function 'CompareValues' (correspondingly across two arrays) using the 'Nor' comparator took 0.103559
 Result: 1
-Function 'CompareValues' (correspondingly across two arrays) using the 'Xor' comparator took 0.10287
+Function 'CompareValues' (correspondingly across two arrays) using the 'Xor' comparator took 0.105845
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'And' comparator took 0.0835461
+Function 'CompareValues' (sequentially within one array) using the 'And' comparator took 0.0882607
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'Nand' comparator took 0.0841268
+Function 'CompareValues' (sequentially within one array) using the 'Nand' comparator took 0.0862671
 Result: 1
-Function 'CompareValues' (sequentially within one array) using the 'Or' comparator took 0.0852746
+Function 'CompareValues' (sequentially within one array) using the 'Or' comparator took 0.0878966
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'Nor' comparator took 0.0852649
+Function 'CompareValues' (sequentially within one array) using the 'Nor' comparator took 0.0876876
 Result: 0
-Function 'CompareValues' (sequentially within one array) using the 'Xor' comparator took 0.084748
+Function 'CompareValues' (sequentially within one array) using the 'Xor' comparator took 0.0867217
 Result: 0
 matrix1 == matrix2 = 1
 matrix1 != matrix2 = 0

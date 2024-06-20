@@ -1,13 +1,13 @@
 *** Testing single-threading for contiguous-internally allocated memory: Combination Functions
 
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.180924
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.15566
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.157441
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.30592
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.185685
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.159088
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.163377
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.167939
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.176387
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.158264
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.159316
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.311118
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.18442
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.159187
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.161796
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.160468
 matrix1 + matrix2 = 
 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 
@@ -107,14 +107,14 @@ matrix3 / matrix4 =
 
 *** Testing multi-threading for contiguous-internally allocated memory: Combination Functions
 
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.261347
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.226434
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.246393
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.258319
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.267011
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.231893
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.231279
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.231688
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.259831
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.249866
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.248559
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.266007
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.266923
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.238077
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.25308
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.257151
 matrix1 + matrix2 = 
 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 
@@ -212,18 +212,18 @@ matrix3 / matrix4 =
 (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
 
 
-For contiguous-internally allocated memory: single-threading was 1.32406 times faster than multi-threading
+For contiguous-internally allocated memory: single-threading was 1.38651 times faster than multi-threading
 
 *** Testing single-threading for distributed-internally allocated memory: Combination Functions
 
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.234104
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.207914
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.209283
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.353461
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.25253
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.210793
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.208008
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.213566
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.235864
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.222138
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.216685
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.362043
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.250475
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.212043
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.210011
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.213714
 matrix1 + matrix2 = 
 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 
@@ -323,14 +323,14 @@ matrix3 / matrix4 =
 
 *** Testing multi-threading for distributed-internally allocated memory: Combination Functions
 
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.304418
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.275655
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.276226
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.293068
-Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.316959
-Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.283881
-Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.269902
-Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.26879
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.322692
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.300616
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.30005
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.315834
+Function 'CombineValues' (correspondingly across two arrays) using the 'Add' combiner took 0.323344
+Function 'CombineValues' (correspondingly across two arrays) using the 'Subtract' combiner took 0.304272
+Function 'CombineValues' (correspondingly across two arrays) using the 'Multiply' combiner took 0.291276
+Function 'CombineValues' (correspondingly across two arrays) using the 'Divide' combiner took 0.291841
 matrix1 + matrix2 = 
 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 
@@ -428,5 +428,5 @@ matrix3 / matrix4 =
 (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) (-nan(ind),-nan(ind)) 
 
 
-For distributed-internally allocated memory: single-threading was 1.21127 times faster than multi-threading
+For distributed-internally allocated memory: single-threading was 1.27403 times faster than multi-threading
 

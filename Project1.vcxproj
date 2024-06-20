@@ -242,6 +242,43 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="AnimationExamples\RisingFloatingInflatingBalloon.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Animation\definitive_test_animation_functions_out.txt" />
+    <Text Include="Animation\test_animation_functions_out.txt" />
+    <Text Include="Arithmetic\definitive_test_arithmetic_functions_out.txt" />
+    <Text Include="Arithmetic\test_arithmetic_functions_out.txt" />
+    <Text Include="Combination\definitive_test_combination_functions_out.txt" />
+    <Text Include="Combination\test_combination_functions_out.txt" />
+    <Text Include="CommunicationExamples\dmm1_rxtx_log.txt" />
+    <Text Include="CommunicationExamples\dmm1_txrx_log.txt" />
+    <Text Include="CommunicationExamples\dmm2_rxtx_log.txt" />
+    <Text Include="CommunicationExamples\dmm2_txrx_log.txt" />
+    <Text Include="Communication\definitive_test_communication_functions_out.txt" />
+    <Text Include="Communication\test_communication_functions_out.txt" />
+    <Text Include="Comparison\definitive_test_comparison_functions_out.txt" />
+    <Text Include="Comparison\test_comparison_functions_out.txt" />
+    <Text Include="Core\definitive_test_core_out.txt" />
+    <Text Include="Core\test_core_out.txt" />
+    <Text Include="GenericType\definitive_test_generic_type_out.txt" />
+    <Text Include="GenericType\test_generic_type_out.txt" />
+    <Text Include="MultiThreading\definitive_test_multi_threading_out.txt" />
+    <Text Include="MultiThreading\test_multi_threading_out.txt" />
+    <Text Include="Serialisation\definitive_test_serialisation_out.txt" />
+    <Text Include="Serialisation\non_uniform.txt" />
+    <Text Include="Serialisation\test_serialisation_out.txt" />
+    <Text Include="Serialisation\uniform.txt" />
+    <Text Include="Statistical\definitive_test_statistical_functions_out.txt" />
+    <Text Include="Statistical\test_statistical_functions_out.txt" />
+    <Text Include="Testing\definitive_generate_reference_times_out.txt" />
+    <Text Include="Testing\generate_reference_times_out.txt" />
+    <Text Include="Useful\definitive_test_useful_functions_out.txt" />
+    <Text Include="Useful\test_useful_functions_out.txt" />
+    <Text Include="Visualisation\definitive_test_visualisation_functions_out.txt" />
+    <Text Include="Visualisation\test_visualisation_functions_out.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

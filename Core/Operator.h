@@ -10,6 +10,7 @@ namespace NArray
 	{
 		// member functions
 	public:
+		virtual ~SingleThreadedOperator() {};
 		virtual bool ApplyOperator(const Index& index, V& value, const S& in, S& out) = 0;
 	};
 
@@ -25,6 +26,7 @@ namespace NArray
 		{
 			m_use_mask = false;
 		}
+		virtual ~MultiThreadedOperator() {};
 		void AddMask(Mask& mask)
 		{
 			m_mask = mask;

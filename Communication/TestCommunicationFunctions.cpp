@@ -7,12 +7,16 @@
 
 void NArray::TestCommunicationFunctions(NArraySupport::StorageOption storage_option, std::fstream& output_file)
 {
+	std::cout << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
+	std::cout << "Communication Functions" << std::endl << std::endl;
 	output_file << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "Communication Functions" << std::endl << std::endl;
 
 	int num_dmm_controllers = 2;
 	Shape shape(c_matrix_order, num_dmm_controllers, num_dmm_controllers);
+	std::string shape_string = std::to_string(num_dmm_controllers) + " X " + std::to_string(num_dmm_controllers);
 
+	std::cout << "Communication Functions on " << shape_string << " Matrix of DMMSoftware::DMMInterface (CommunicateValues using ICommunicable::SendReceive, ICommunicable::ReceiveSend)" << std::endl;
 	typedef DMMSoftware::DMMInterface stored_type;
 	typedef NArrayType<stored_type>::Matrix storage_type;
 	storage_type dmm_controllers(storage_option, shape, stored_type(), false);

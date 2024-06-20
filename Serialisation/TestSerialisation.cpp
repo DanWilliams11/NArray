@@ -8,27 +8,31 @@ void NArray::TestSerialisation(NArraySupport::StorageOption storage_option, std:
 {
 	for (int i = 0; i < 2; i++)
 	{
-		bool uniform = false;
+		bool uniform = true;
 		if (i == 1)
-			uniform = true;
+			uniform = false;
 		
 		TestSerialisation(storage_option, output_file, verbosity, uniform);
 
+		std::cout << std::endl;
 		output_file << std::endl;
 	}
 }
 
 void NArray::TestSerialisation(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity, bool uniform)
 {
+	std::cout << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	std::string file_str;
 	if (uniform)
 	{
+		std::cout << "Serialisation of uniform n-dimensional array" << std::endl << std::endl;
 		output_file << "Serialisation of uniform n-dimensional array" << std::endl << std::endl;
 		file_str = "Serialisation/uniform.txt";
 	}
 	else
 	{
+		std::cout << "Serialisation of non-uniform n-dimensional array" << std::endl << std::endl;
 		output_file << "Serialisation of non-uniform n-dimensional array" << std::endl << std::endl;
 		file_str = "Serialisation/non_uniform.txt";
 	}
@@ -52,9 +56,13 @@ void NArray::TestSerialisation(NArraySupport::StorageOption storage_option, std:
 		if (reindex)
 		{
 			shape = small_shape; // indexes take up a lot of room!
-			output_file << std::endl << "The array is now smaller because reindexing is on and indexes take up a lot of room - modify this according to available memory" << std::endl << std::endl;
+			std::cout << std::endl << "The array is smaller in this test because reindexing is on and indexes take up a lot of room - modify this according to available memory" << std::endl << std::endl;
+			output_file << std::endl << "The array is smaller in this test because reindexing is on and indexes take up a lot of room - modify this according to available memory" << std::endl << std::endl;
 			if (!uniform)
+			{
+				std::cout << "This will take a long time because even though the array is smaller, it is non-uniform and the indexes need to be recalculated on-the-fly" << std::endl << std::endl;
 				output_file << "This will take a long time because even though the array is smaller, it is non-uniform and the indexes need to be recalculated on-the-fly" << std::endl << std::endl;
+			}
 		}
 
 		{
@@ -71,6 +79,7 @@ void NArray::TestSerialisation(NArraySupport::StorageOption storage_option, std:
 				data_out[4][11].PutSize(data_out, 21, stored_type(2), reindex);
 			}
 			timer.StopTimer();
+			std::cout << "Constructing the output array with re-indexing " << NArraySupport::ReIndexStr(reindex) << " took " << timer.GetTime() << std::endl;
 			output_file << "Constructing the output array with re-indexing " << NArraySupport::ReIndexStr(reindex) << " took " << timer.GetTime() << std::endl;
 
 			timer.StartTimer();
@@ -81,6 +90,8 @@ void NArray::TestSerialisation(NArraySupport::StorageOption storage_option, std:
 				data_out.SerialiseNonUniform(data_out, serialisation_out, out, reindex);
 			serialisation_out.close();
 			timer.StopTimer();
+			std::cout << "Number of elements in output array is " << data_out.GetTotalSize() << std::endl;
+			std::cout << "Serialisation out with re-indexing " << NArraySupport::ReIndexStr(reindex) << " took " << timer.GetTime() << std::endl;
 			output_file << "Number of elements in output array is " << data_out.GetTotalSize() << std::endl;
 			output_file << "Serialisation out with re-indexing " << NArraySupport::ReIndexStr(reindex) << " took " << timer.GetTime() << std::endl;
 			data_out.PrettyPrint(output_file, verbosity, "Data Out:", true);
@@ -96,6 +107,8 @@ void NArray::TestSerialisation(NArraySupport::StorageOption storage_option, std:
 				data_in.SerialiseNonUniform(data_in, serialisation_in, in, reindex);
 			serialisation_in.close();
 			timer.StopTimer();
+			std::cout << "Number of elements in input array is " << data_in.GetTotalSize() << std::endl;
+			std::cout << "Serialisation in with re-indexing " << NArraySupport::ReIndexStr(reindex) << " took " << timer.GetTime() << std::endl;
 			output_file << "Number of elements in input array is " << data_in.GetTotalSize() << std::endl;
 			output_file << "Serialisation in with re-indexing " << NArraySupport::ReIndexStr(reindex) << " took " << timer.GetTime() << std::endl;
 			data_in.PrettyPrint(output_file, verbosity, "Data In:", true);

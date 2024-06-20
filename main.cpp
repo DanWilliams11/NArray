@@ -22,7 +22,7 @@ int main()
 		// int* memory_leak = new int; // create a memory leak to ensure testing for memory leaks works
 		// *memory_leak = 0;
 
-		NArray::TestAllFunctions(false);
+		NArray::TestAllFunctions();
 	}
 	catch (std::exception& error)
 	{

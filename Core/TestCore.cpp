@@ -7,6 +7,8 @@
 
 void NArray::TestCore(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
+	std::cout << "Core" << std::endl << std::endl;
 	output_file << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "Core" << std::endl << std::endl;
 
@@ -18,6 +20,7 @@ void NArray::TestCore(NArraySupport::StorageOption storage_option, std::fstream&
 
 void NArray::TestScalars(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing Scalars" << std::endl << std::endl;
 	output_file << "*** Testing Scalars" << std::endl << std::endl;
 
 	Timer timer;
@@ -26,6 +29,7 @@ void NArray::TestScalars(NArraySupport::StorageOption storage_option, std::fstre
 	NArrayType<bool>::Scalar scalar_bool;
 	NArrayType<char>::Scalar scalar_char;
 
+	std::cout << "Construction" << std::endl;
 	output_file << "Construction" << std::endl;
 	if (storage_option == NArraySupport::ContiguousExternal)
 	{
@@ -42,12 +46,14 @@ void NArray::TestScalars(NArraySupport::StorageOption storage_option, std::fstre
 	scalar_bool.PrettyPrint(output_file, verbosity, "Scalar bool");
 	scalar_char.PrettyPrint(output_file, verbosity, "Scalar char");
 
+	std::cout << "Copy-construction" << std::endl;
 	output_file << "Copy-construction" << std::endl; 
 	NArrayType<bool>::Scalar scalar_bool_copy(scalar_bool);
 	NArrayType<char>::Scalar scalar_char_copy(scalar_char);
 	scalar_bool_copy.PrettyPrint(output_file, verbosity, "Copy of Scalar bool");
 	scalar_char_copy.PrettyPrint(output_file, verbosity, "Copy of Scalar char");
 
+	std::cout << "Population" << std::endl;
 	output_file << "Population" << std::endl;
 	scalar_bool[1] = true;
 	scalar_char[1] = 'a';
@@ -66,6 +72,7 @@ void NArray::TestScalars(NArraySupport::StorageOption storage_option, std::fstre
 	scalar_bool_copy.PrettyPrint(output_file, verbosity, "Copy of Scalar bool after reading from the linear array and subsequent destruction of the array");
 	scalar_char_copy.PrettyPrint(output_file, verbosity, "Copy of Scalar char after reading from the linear array and subsequent destruction of the array");
 
+	std::cout << "Useful Functions (MakeZero, MakeOne, MakeValue, MakeRandom, StaticCastValues" << std::endl;
 	output_file << "Useful Functions" << std::endl;
 	MakeZero<NArrayType<bool>::Scalar, bool>(scalar_bool, nullptr, &timer, &output_file, verbosity);
 	MakeOne<NArrayType<bool>::Scalar, bool>(scalar_bool, nullptr, &timer, &output_file, verbosity);
@@ -73,6 +80,7 @@ void NArray::TestScalars(NArraySupport::StorageOption storage_option, std::fstre
 	MakeRandom(scalar_bool, false, true, &timer, &output_file, verbosity);
 	StaticCastValues<NArrayType<bool>::Scalar, bool, NArrayType<char>::Scalar, char>(scalar_bool, scalar_char, nullptr, &timer, &output_file, verbosity);
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	if (storage_option == NArraySupport::ContiguousExternal)
@@ -84,6 +92,7 @@ void NArray::TestScalars(NArraySupport::StorageOption storage_option, std::fstre
 
 void NArray::TestVectors(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing Vectors" << std::endl << std::endl;
 	output_file << "*** Testing Vectors" << std::endl << std::endl;
 
 	Timer timer;
@@ -93,6 +102,7 @@ void NArray::TestVectors(NArraySupport::StorageOption storage_option, std::fstre
 	NArrayType<char>::Vector vector_char;
 	NArrayType<int>::Vector vector_int;
 
+	std::cout << "Construction" << std::endl;
 	output_file << "Construction" << std::endl;
 	if (storage_option == NArraySupport::ContiguousExternal)
 	{
@@ -109,12 +119,14 @@ void NArray::TestVectors(NArraySupport::StorageOption storage_option, std::fstre
 	vector_char.PrettyPrint(output_file, verbosity, "Vector char");
 	vector_int.PrettyPrint(output_file, verbosity, "Vector int");
 
+	std::cout << "Copy-construction" << std::endl;
 	output_file << "Copy-construction" << std::endl; 
 	NArrayType<char>::Vector vector_char_copy(vector_char);
 	NArrayType<int>::Vector vector_int_copy(vector_int);
 	vector_char_copy.PrettyPrint(output_file, verbosity, "Copy of Vector char");
 	vector_int_copy.PrettyPrint(output_file, verbosity, "Copy of Vector int");
 
+	std::cout << "Population" << std::endl;
 	output_file << "Population" << std::endl;
 	vector_char[1][1] = 'a';
 	vector_char[2][1] = 'b';
@@ -135,6 +147,7 @@ void NArray::TestVectors(NArraySupport::StorageOption storage_option, std::fstre
 	vector_char_copy.PrettyPrint(output_file, verbosity, "Copy of Vector char after reading from the linear array and subsequent destruction of the array");
 	vector_int_copy.PrettyPrint(output_file, verbosity, "Copy of Vector int after reading from the linear array and subsequent destruction of the array");
 
+	std::cout << "Useful Functions (MakeRamped, MakeZero, MakeOne, MakeValue, MakeRandom, StaticCastValues)" << std::endl;
 	output_file << "Useful Functions" << std::endl;
 	MakeRamped(vector_char, 'a', char(1), &timer, &output_file, verbosity);
 	MakeZero<NArrayType<char>::Vector, char>(vector_char, nullptr, &timer, &output_file, verbosity);
@@ -143,6 +156,7 @@ void NArray::TestVectors(NArraySupport::StorageOption storage_option, std::fstre
 	MakeRandom(vector_char, 'a', 'z', &timer, &output_file, verbosity);
 	StaticCastValues<NArrayType<char>::Vector, char, NArrayType<int>::Vector, int>(vector_char, vector_int, nullptr, &timer, &output_file, verbosity);
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	if (storage_option == NArraySupport::ContiguousExternal)
@@ -154,6 +168,7 @@ void NArray::TestVectors(NArraySupport::StorageOption storage_option, std::fstre
 
 void NArray::TestMatrices(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing Matrices" << std::endl << std::endl;
 	output_file << "*** Testing Matrices" << std::endl << std::endl;
 
 	Timer timer;
@@ -163,6 +178,7 @@ void NArray::TestMatrices(NArraySupport::StorageOption storage_option, std::fstr
 	NArrayType<int>::Matrix matrix_int;
 	NArrayType<double>::Matrix matrix_double;
 		
+	std::cout << "Construction" << std::endl;
 	output_file << "Construction" << std::endl;
 	if (storage_option == NArraySupport::ContiguousExternal)
 	{
@@ -179,12 +195,14 @@ void NArray::TestMatrices(NArraySupport::StorageOption storage_option, std::fstr
 	matrix_int.PrettyPrint(output_file, verbosity, "Matrix int");
 	matrix_double.PrettyPrint(output_file, verbosity, "Matrix double");
 
+	std::cout << "Copy-construction" << std::endl;
 	output_file << "Copy-construction" << std::endl; 
 	NArrayType<int>::Matrix matrix_int_copy(matrix_int);
 	NArrayType<double>::Matrix matrix_double_copy(matrix_double);
 	matrix_int_copy.PrettyPrint(output_file, verbosity, "Copy of Matrix int");
 	matrix_double_copy.PrettyPrint(output_file, verbosity, "Copy of Matrix double");
 
+	std::cout << "Useful Functions (MakeRamped, MakeZero, MakeOne, MakeValue, MakeRandom, StaticCastValues)" << std::endl;
 	output_file << "Useful Functions" << std::endl;
 	MakeRamped(matrix_int, 0, 1, &timer, &output_file, verbosity);
 	MakeZero<NArrayType<int>::Matrix, int>(matrix_int, nullptr, &timer, &output_file, verbosity);
@@ -193,6 +211,7 @@ void NArray::TestMatrices(NArraySupport::StorageOption storage_option, std::fstr
 	MakeRandom(matrix_int, 0, 999, &timer, &output_file, verbosity);
 	StaticCastValues<NArrayType<int>::Matrix, int, NArrayType<double>::Matrix, double>(matrix_int, matrix_double, nullptr, &timer, &output_file, verbosity);
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	if (storage_option == NArraySupport::ContiguousExternal)
@@ -204,6 +223,7 @@ void NArray::TestMatrices(NArraySupport::StorageOption storage_option, std::fstr
 
 void NArray::TestArray3D(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing Array3D" << std::endl << std::endl;
 	output_file << "*** Testing Array3D" << std::endl << std::endl;
 
 	Timer timer;
@@ -213,6 +233,7 @@ void NArray::TestArray3D(NArraySupport::StorageOption storage_option, std::fstre
 	NArrayType<double>::Array3D array3D_double;
 	NArrayType<std::complex<double>>::Array3D array3D_complex;
 
+	std::cout << "Construction" << std::endl;
 	output_file << "Construction" << std::endl;
 	if (storage_option == NArraySupport::ContiguousExternal)
 	{
@@ -229,12 +250,14 @@ void NArray::TestArray3D(NArraySupport::StorageOption storage_option, std::fstre
 	array3D_double.PrettyPrint(output_file, verbosity, "Array3D double");
 	array3D_complex.PrettyPrint(output_file, verbosity, "Array3D complex");
 
+	std::cout << "Copy-construction" << std::endl;
 	output_file << "Copy-construction" << std::endl; 
 	NArrayType<double>::Array3D array3D_double_copy(array3D_double);
 	NArrayType<std::complex<double>>::Array3D array3D_complex_copy(array3D_complex);
 	array3D_double_copy.PrettyPrint(output_file, verbosity, "Copy of Array3D double");
 	array3D_complex_copy.PrettyPrint(output_file, verbosity, "Copy of Array3D complex");
 
+	std::cout << "Useful Functions (MakeRamped, MakeZero, MakeOne, MakeValue, MakeRandom, StaticCastValues)" << std::endl;
 	output_file << "Useful Functions" << std::endl;
 	MakeRamped(array3D_double, 0.0, 0.1, &timer, &output_file, verbosity);
 	MakeZero<NArrayType<double>::Array3D, double>(array3D_double, nullptr, &timer, &output_file, verbosity);
@@ -243,6 +266,7 @@ void NArray::TestArray3D(NArraySupport::StorageOption storage_option, std::fstre
 	MakeRandom(array3D_double, 0.0, 999.999, &timer, &output_file, verbosity);
 	StaticCastValues<NArrayType<double>::Array3D, double, NArrayType<std::complex<double>>::Array3D, std::complex<double>>(array3D_double, array3D_complex, nullptr, &timer, &output_file, verbosity);
 
+	std::cout << "Resizing" << std::endl;
 	output_file << "Resizing" << std::endl;
 	array3D_double.PutSize(array3D_double, 3, 0.0, false);
 	array3D_double[1].PutSize(array3D_double, 3, 0.0, false);
@@ -261,6 +285,7 @@ void NArray::TestArray3D(NArraySupport::StorageOption storage_option, std::fstre
 	array3D_double.PrettyPrint(output_file, verbosity, "Array3D double using function 'PutSize'");
 	array3D_double_copy.PrettyPrint(output_file, verbosity, "Copy of Array3D double");
 	
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	if (storage_option == NArraySupport::ContiguousExternal)

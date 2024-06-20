@@ -9,6 +9,8 @@
 
 double NArray::TestComparisonFunctions(NArraySupport::StorageOption storage_option, std::fstream& output_file)
 {
+	std::cout << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
+	std::cout << "Comparison Functions" << std::endl << std::endl;
 	output_file << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "Comparison Functions" << std::endl << std::endl;
 
@@ -16,7 +18,9 @@ double NArray::TestComparisonFunctions(NArraySupport::StorageOption storage_opti
 	int num_rows = 1000;
 	int num_cols = 1000;
 	Shape shape(c_matrix_order, num_rows, num_cols);
+	std::string shape_string = std::to_string(num_rows) + " X " + std::to_string(num_cols);
 
+	std::cout << "Comparison Functions on " << shape_string << " Matrix of int (CompareValues between matrices using Equal, NotEqual, LessThan, LessThanOrEqual, GreaterThan, GreaterThanOrEqual)" << std::endl;
 	typedef int stored_type1;
 	typedef NArrayType<stored_type1>::Matrix storage_type1;
 	storage_type1 matrix1(storage_option, shape, stored_type1(0), true);
@@ -28,6 +32,7 @@ double NArray::TestComparisonFunctions(NArraySupport::StorageOption storage_opti
 	CompareValues(matrix1, matrix2, GreaterThan<stored_type1>(), &timer, &output_file);
 	CompareValues(matrix1, matrix2, GreaterThanOrEqual<stored_type1>(), &timer, &output_file);
 
+	std::cout << "Comparison Functions on " << shape_string << " Matrix of bool (CompareValues between matrices using AND, NAND, OR, NOR, XOR)" << std::endl;
 	typedef bool stored_type2;
 	typedef NArrayType<stored_type2>::Matrix storage_type2;
 	storage_type2 matrix3(storage_option, shape, stored_type2(false), true);
@@ -38,6 +43,7 @@ double NArray::TestComparisonFunctions(NArraySupport::StorageOption storage_opti
 	CompareValues(matrix3, matrix4, Nor<stored_type2>(), &timer, &output_file);
 	CompareValues(matrix3, matrix4, Xor<stored_type2>(), &timer, &output_file);
 
+	std::cout << "Comparison Functions on " << shape_string << " Matrix of bool (CompareValues within matrix using AND, NAND, OR, NOR, XOR)" << std::endl;
 	typedef bool stored_type3;
 	typedef NArrayType<stored_type3>::Matrix storage_type3;
 	storage_type3 matrix5(storage_option, shape, stored_type3(false), false);
@@ -47,15 +53,18 @@ double NArray::TestComparisonFunctions(NArraySupport::StorageOption storage_opti
 	CompareValues(matrix5, Nor<stored_type3>(), &timer, &output_file);
 	CompareValues(matrix5, Xor<stored_type3>(), &timer, &output_file);
 
+	std::cout << "Comparison Functions on " << shape_string << " Matrix of int (CompareValues between matrices using operator==, operator!=, operator<, operator<=, operator>, operator>=)" << std::endl;
 	output_file << "matrix1 == matrix2 = " << (matrix1 == matrix2) << std::endl;
 	output_file << "matrix1 != matrix2 = " << (matrix1 != matrix2) << std::endl;
 	output_file << "matrix1 < matrix2 = " << (matrix1 < matrix2) << std::endl;
 	output_file << "matrix1 <= matrix2 = " << (matrix1 <= matrix2) << std::endl;
 	output_file << "matrix1 > matrix2 = " << (matrix1 > matrix2) << std::endl;
 	output_file << "matrix1 >= matrix2 = " << (matrix1 >= matrix2) << std::endl;
+	std::cout << "Comparison Functions on " << shape_string << " Matrix of bool (CompareValues between matrices using operator&&, operator||)" << std::endl;
 	output_file << "matrix3 && matrix4 = " << (matrix3 && matrix4) << std::endl;
 	output_file << "matrix3 || matrix4 = " << (matrix3 || matrix4) << std::endl;
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	return timer.GetTotalTime();

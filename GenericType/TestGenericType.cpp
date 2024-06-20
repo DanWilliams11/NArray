@@ -11,6 +11,8 @@
 
 void NArray::TestGenericType(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
+	std::cout << "GenericType" << std::endl << std::endl;
 	output_file << "*** Testing " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "GenericType" << std::endl << std::endl;
 
@@ -20,6 +22,7 @@ void NArray::TestGenericType(NArraySupport::StorageOption storage_option, std::f
 
 void NArray::TestHomogeneousGenericType(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing Homogeneous GenericType" << std::endl << std::endl;
 	output_file << "*** Testing Homogeneous GenericType" << std::endl << std::endl;
 
 	typedef GenericType stored_type1;
@@ -38,6 +41,7 @@ void NArray::TestHomogeneousGenericType(NArraySupport::StorageOption storage_opt
 	stored_type1 step_val = stored_type2(0.1, 0.1);
 	stored_type1 end_val = stored_type2(999.999, 999.999);
 
+	std::cout << "Construction" << std::endl;
 	output_file << "Construction" << std::endl;
 	if (storage_option == NArraySupport::ContiguousExternal)
 	{
@@ -56,12 +60,14 @@ void NArray::TestHomogeneousGenericType(NArraySupport::StorageOption storage_opt
 	array_generictype.PrettyPrint(output_file, verbosity, "Array GenericType");
 	array_complex.PrettyPrint(output_file, verbosity, "Array complex");
 
+	std::cout << "Copy-construction" << std::endl;
 	output_file << "Copy-construction" << std::endl;
 	storage_type1 array_generictype_copy(array_generictype);
 	storage_type2 array_complex_copy(array_complex);
 	array_generictype_copy.PrettyPrint(output_file, verbosity, "Copy of Array GenericType");
 	array_complex_copy.PrettyPrint(output_file, verbosity, "Copy of Array complex");
 
+	std::cout << "Useful Functions" << std::endl;
 	output_file << "Useful Functions" << std::endl;
 	MakeRamped(array_generictype, start_val, step_val, &timer, &output_file, verbosity);
 	MakeZero<storage_type1, stored_type1>(array_generictype, nullptr, &timer, &output_file, verbosity);
@@ -70,12 +76,14 @@ void NArray::TestHomogeneousGenericType(NArraySupport::StorageOption storage_opt
 	MakeRandom<storage_type1, stored_type2>(array_generictype, start_val, end_val, &timer, &output_file, verbosity);
 	StaticCastValues<storage_type1, stored_type1, storage_type2, stored_type2>(array_generictype, array_complex, nullptr, &timer, &output_file, verbosity);
 
+	std::cout << "Arithmetic Functions" << std::endl;
 	output_file << "Arithmetic Functions" << std::endl;
 	MakeRamped(array_generictype, start_val, step_val, &timer, &output_file, verbosity);
 	CalculateArguments<storage_type1, stored_type2, storage_type1, stored_type1>(array_generictype, array_generictype, nullptr, &timer, &output_file, verbosity);
 	MakeRamped(array_generictype, start_val, step_val, &timer, &output_file, verbosity);
 	CalculateModuli<storage_type1, stored_type2, storage_type1, stored_type1>(array_generictype, array_generictype, nullptr, &timer, &output_file, verbosity);
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	if (storage_option == NArraySupport::ContiguousExternal)
@@ -87,6 +95,7 @@ void NArray::TestHomogeneousGenericType(NArraySupport::StorageOption storage_opt
 
 void NArray::TestHeterogeneousGenericType(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity)
 {
+	std::cout << "*** Testing Heterogeneous GenericType" << std::endl << std::endl;
 	output_file << "*** Testing Heterogeneous GenericType" << std::endl << std::endl;
 
 	typedef GenericType stored_type;
@@ -99,6 +108,7 @@ void NArray::TestHeterogeneousGenericType(NArraySupport::StorageOption storage_o
 	storage_type array_generictype2;
 	stored_type empty_val = stored_type();
 
+	std::cout << "Construction" << std::endl;
 	output_file << "Construction" << std::endl;
 	if (storage_option == NArraySupport::ContiguousExternal)
 	{
@@ -115,12 +125,14 @@ void NArray::TestHeterogeneousGenericType(NArraySupport::StorageOption storage_o
 	array_generictype1.PrettyPrint(output_file, verbosity, "Array GenericType");
 	array_generictype2.PrettyPrint(output_file, verbosity, "Array GenericType");
 
+	std::cout << "Copy-construction" << std::endl;
 	output_file << "Copy-construction" << std::endl;
 	storage_type array_generictype1_copy(array_generictype1);
 	storage_type array_generictype2_copy(array_generictype2);
 	array_generictype1_copy.PrettyPrint(output_file, verbosity, "Copy of Array GenericType");
 	array_generictype2_copy.PrettyPrint(output_file, verbosity, "Copy of Array GenericType");
 
+	std::cout << "Population" << std::endl;
 	output_file << "Population" << std::endl;
 	array_generictype1[1][1] = false;
 	array_generictype1[2][1] = 'a';
@@ -152,6 +164,7 @@ void NArray::TestHeterogeneousGenericType(NArraySupport::StorageOption storage_o
 	array_generictype2.PrettyPrint(output_file, verbosity, "Array GenericType (having changed the types at run-time)");
 	output_file << "Sum of the two arrays:" << std::endl << array_generictype1 + array_generictype2;
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	if (storage_option == NArraySupport::ContiguousExternal)

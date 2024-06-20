@@ -7,6 +7,8 @@
 
 double NArray::TestUsefulFunctions(NArraySupport::StorageOption storage_option, std::fstream& output_file, bool verbosity, bool multi_threaded)
 {
+	std::cout << "*** Testing " << NArraySupport::MultiThreadingStr(multi_threaded) << " for " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
+	std::cout << "Useful Functions" << std::endl << std::endl;
 	output_file << "*** Testing " << NArraySupport::MultiThreadingStr(multi_threaded) << " for " << NArraySupport::StorageOptionStr(storage_option) << " allocated memory: ";
 	output_file << "Useful Functions" << std::endl << std::endl;
 	
@@ -25,37 +27,47 @@ double NArray::TestUsefulFunctions(NArraySupport::StorageOption storage_option, 
 	typedef NArrayType<stored_type>::Matrix storage_type;
 	storage_type output_matrix(storage_option, shape, stored_type(0), false);
 
+	std::cout << "Testing MakeRamped" << std::endl;
 	stored_type start_val = 1;
 	stored_type step_val = 1;
 	storage_type input_matrix(storage_option, shape, stored_type(0), true);
 	MakeRamped<storage_type, stored_type>(input_matrix, start_val, step_val, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then MakeTranspose" << std::endl;
 	stored_type min = 1;
 	stored_type max = 10;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	MakeTranspose<storage_type, stored_type>(input_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then MakeIdentity" << std::endl;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	MakeIdentity<storage_type, stored_type>(input_matrix, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then MakeSymmetric using LTR" << std::endl;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	MakeSymmetric<storage_type, stored_type>(input_matrix, NArraySupport::LTR, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then MakeSymmetric using UTR" << std::endl;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	MakeSymmetric<storage_type, stored_type>(input_matrix, NArraySupport::UTR, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then MakeTriangleZero" << std::endl;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	MakeTriangleZero<storage_type, stored_type>(input_matrix, NArraySupport::LTR, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then MakeTriangleOne" << std::endl;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	MakeTriangleOne<storage_type, stored_type>(input_matrix, NArraySupport::UTR, multi_threading_mask_ptr, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then MakeTriangleValue" << std::endl;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	MakeTriangleValue<storage_type, stored_type>(input_matrix, NArraySupport::DIAG, 999, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then Transpose" << std::endl;
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	output_matrix = Transpose<storage_type, stored_type>(input_matrix, multi_threading_mask_ptr, storage_option, &timer, &output_file, verbosity);
 
+	std::cout << "Testing MakeRandom, then DiffPairwiseColumns" << std::endl;
 	num_rows = 5;
 	num_cols = 5;
 	shape.ReShape(c_matrix_order, num_rows, num_cols);
@@ -63,6 +75,7 @@ double NArray::TestUsefulFunctions(NArraySupport::StorageOption storage_option, 
 	MakeRandom(input_matrix, min, max, &timer, &output_file, verbosity);
 	output_matrix = DiffPairwiseColumns<storage_type, stored_type, NArrayType<bool>::Matrix, bool>(input_matrix, storage_option, &timer, &output_file, verbosity);
 
+	std::cout << std::endl;
 	output_file << std::endl;
 
 	return timer.GetTotalTime();
